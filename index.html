@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Your To-Do List</title>
+</head>
+<body>
+    <div id="container" class="max-width-container">
+        <div id="myDIV" class="header">
+            <h2>To Do List</h2>
+            <form id="task-form" onsubmit="newElement(); return false">
+                <div class="input-container">
+                    <input type="text" id="myInput" placeholder="Title..." class="task-input">
+                    <button type="submit" class="addBtn">Add</button>
+                </div>
+            </form>
+        </div>
+
+        <ul id="myUL">
+            <li>
+                <span class="task">Hit the gym</span>
+                <button class="remove-btn">Remove</button>
+            </li>
+            
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
